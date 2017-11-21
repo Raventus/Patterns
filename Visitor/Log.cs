@@ -40,4 +40,13 @@ namespace Visitor
             logEntryVisitor.Visit(this);
         }
     }
+
+     public class SimpleLogEntry : LogEntry
+    {
+        public override void Accept(ILogEntryVisitor logEntryVisitor)
+        {
+            // Благодаря перегрузки методов выбирается метод Visit(ExceptionLogEntry)
+            logEntryVisitor.Visit(this);
+        }
+    }
 }
