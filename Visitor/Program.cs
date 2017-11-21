@@ -17,6 +17,13 @@ namespace Visitor
     {
         static void Main(string[] args)
         {
+            int a = 42;
+            int b = 32;
+            int c = a + b;
+
+
+
+
         }
     }
 
